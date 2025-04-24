@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LAC Rhythm Game</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      font-family: 'Fredoka', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #141e30, #243b55, #141e30, #1f2a38);
+      background-size: 400% 400%;
+      animation: bgmove 12s ease infinite;
+      color: white;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 1.4s ease-out;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    a.download-btn {
+      background: #ff2e63;
+      color: white;
+      font-size: 1.4rem;
+      padding: 1.2rem 3rem;
+      border-radius: 14px;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    a.download-btn:hover {
+      background: #ff4e7d;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bgmove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>lac! - a simple rhythm game</h1>
+    <a class="download-btn" href="https://github.com/bubu07codes/lac_releases/releases/latest/download/setup.exe">Download</a>
+  </div>
+</body>
+</html>
